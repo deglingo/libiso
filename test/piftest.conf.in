@@ -1,0 +1,15 @@
+
+[DEFAULT]
+
+suite = libiso-test
+
+modules =
+  test_base
+
+cflags = -DCL_LOG_DOMAIN=\"libiso-test\" -I@top_srcdir@ -I@top_builddir@ @PIFTEST_CFLAGS@ @LOS_CFLAGS@
+
+ldflags = @PIFTEST_LIBS@ @LOS_LIBS@
+
+extra_sources =
+
+valgrind_supp_files =
