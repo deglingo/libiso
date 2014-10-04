@@ -1,0 +1,12 @@
+PACKAGE=@PACKAGE@
+prefix=@prefix@
+exec_prefix=@exec_prefix@
+includedir=@includedir@
+libdir=@libdir@
+
+Name: libiso
+Description:
+Version: 0.0.0
+Requires: los allegro-debug-5 allegro_main-debug-5
+Cflags: -I${includedir}
+Libs: -L${libdir} -liso
